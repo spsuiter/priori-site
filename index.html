@@ -3,26 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Priori™ — Coming Soon</title>
-  <meta name="description" content="Priori is an AI-assisted patent prosecution platform for law firms. Launching soon.">
+  <title>Priori™ — Down for Maintenance</title>
+  <meta name="description" content="Priori is temporarily down for scheduled maintenance. We'll be back shortly.">
   <meta name="robots" content="noindex, nofollow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --navy:  #1B3A5C;
-      --navy2: #0F2540;
-      --slate: #4A6484;
-      --muted: #7A8AA0;
-      --light: #F6F8FB;
-      --border:#D0DCE8;
+      --navy:          #1B3A5C;
+      --navy2:         #0F2540;
+      --slate:         #4A6484;
+      --muted:         #7A8AA0;
+      --light:         #F6F8FB;
+      --border:        #D0DCE8;
+      --amber:         #7B4000;
+      --lamber:        #FFFBF0;
+      --lamber-border: #F0D9A8;
     }
 
     html, body {
-      height: 100%;
+      min-height: 100%;
       font-family: 'DM Sans', system-ui, sans-serif;
       background: var(--light);
       color: var(--navy);
@@ -34,60 +37,65 @@
       align-items: center;
       justify-content: center;
       min-height: 100vh;
-      padding: 2rem;
+      padding: 2rem 1.5rem;
       text-align: center;
     }
 
-    .logo-wrap {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      margin-bottom: 2.5rem;
-    }
-
-    .logo-img {
-      height: 44px;
-      width: auto;
-    }
+    .logo-wrap { margin-bottom: 2.5rem; }
+    .logo-wrap img { height: 52px; width: auto; }
 
     .card {
       background: #ffffff;
       border: 1px solid var(--border);
       border-radius: 16px;
-      padding: 3rem 3.5rem;
-      max-width: 540px;
+      padding: 3rem 3.5rem 2.75rem;
+      max-width: 520px;
       width: 100%;
-      box-shadow: 0 4px 32px rgba(15, 35, 64, 0.07);
+      box-shadow: 0 4px 32px rgba(15,35,64,.07);
+    }
+
+    .icon-wrap {
+      width: 64px;
+      height: 64px;
+      background: var(--lamber);
+      border: 1px solid var(--lamber-border);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      font-size: 1.875rem;
+      line-height: 1;
     }
 
     .badge {
       display: inline-block;
-      background: #EBF3FB;
-      color: var(--navy);
+      background: var(--lamber);
+      color: var(--amber);
+      border: 1px solid var(--lamber-border);
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      padding: 0.35rem 0.9rem;
+      padding: 0.3rem 0.85rem;
       border-radius: 99px;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.25rem;
     }
 
     h1 {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 1.875rem;
+      font-size: 1.75rem;
       font-weight: 700;
       color: var(--navy);
       line-height: 1.25;
-      margin-bottom: 1rem;
+      margin-bottom: 0.875rem;
     }
 
     .sub {
-      font-size: 1.0625rem;
+      font-size: 1rem;
       color: var(--slate);
       line-height: 1.65;
-      margin-bottom: 2rem;
     }
 
     .divider {
@@ -96,13 +104,35 @@
       margin: 2rem 0;
     }
 
+    .status-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      color: var(--slate);
+      margin-bottom: 1.5rem;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      background: #F59E0B;
+      border-radius: 50%;
+      flex-shrink: 0;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.4; }
+    }
+
     .contact-label {
       font-size: 0.8125rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.07em;
+      font-weight: 500;
       color: var(--muted);
-      margin-bottom: 0.875rem;
+      margin-bottom: 0.75rem;
     }
 
     .contact-link {
@@ -113,44 +143,51 @@
       font-family: 'Space Grotesk', sans-serif;
       font-weight: 600;
       font-size: 0.9375rem;
-      padding: 0.7rem 1.75rem;
+      padding: 0.65rem 1.75rem;
       border-radius: 8px;
       transition: background 0.15s;
     }
 
-    .contact-link:hover {
-      background: var(--navy2);
-      text-decoration: none;
-    }
+    .contact-link:hover { background: var(--navy2); text-decoration: none; }
 
     .footer-note {
       margin-top: 2.5rem;
       font-size: 0.8125rem;
       color: var(--muted);
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
 
   <div class="logo-wrap">
-    <img src="priori_logo.svg" alt="Priori" class="logo-img">
+    <img src="priori_logo.svg" alt="Priori™">
   </div>
 
   <div class="card">
-    <div class="badge">Site Under Construction</div>
-    <h1>We're putting the finishing touches on things.</h1>
+    <div class="icon-wrap">🔧</div>
+    <div class="badge">Scheduled Maintenance</div>
+    <h1>We'll be back shortly.</h1>
     <p class="sub">
-      Priori is an AI-assisted patent prosecution platform built for law firms —
-      deployed on-premises, never in the cloud. The full site will be live shortly.
+      Priori is temporarily offline for scheduled maintenance.
+      We apologize for the interruption and expect to be back online soon.
     </p>
 
     <hr class="divider">
 
-    <div class="contact-label">Interested in early access?</div>
-    <a href="mailto:patentingest@gmail.com" class="contact-link">Get in Touch</a>
+    <div class="status-row">
+      <span class="status-dot"></span>
+      Maintenance in progress
+    </div>
+
+    <div class="contact-label">Questions? We're still here.</div>
+    <a href="mailto:patentingest@gmail.com" class="contact-link">Contact Us</a>
   </div>
 
-  <p class="footer-note">© 2025, 2026 Priori™ · Patent application pending · priori.esq</p>
+  <p class="footer-note">
+    © 2025, 2026 Priori™ · Patent application pending<br>
+    priori.esq
+  </p>
 
 </body>
 </html>
