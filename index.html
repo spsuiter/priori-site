@@ -3,189 +3,206 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Priori™ — Down for Maintenance</title>
-  <meta name="description" content="Priori is temporarily down for scheduled maintenance. We'll be back shortly.">
-  <meta name="robots" content="noindex, nofollow">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --navy:          #1B3A5C;
-      --navy2:         #0F2540;
-      --slate:         #4A6484;
-      --muted:         #7A8AA0;
-      --light:         #F6F8FB;
-      --border:        #D0DCE8;
-      --amber:         #7B4000;
-      --lamber:        #FFFBF0;
-      --lamber-border: #F0D9A8;
-    }
-
-    html, body {
-      min-height: 100%;
-      font-family: 'DM Sans', system-ui, sans-serif;
-      background: var(--light);
-      color: var(--navy);
-    }
-
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      padding: 2rem 1.5rem;
-      text-align: center;
-    }
-
-    .logo-wrap { margin-bottom: 2.5rem; }
-    .logo-wrap img { height: 52px; width: auto; }
-
-    .card {
-      background: #ffffff;
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 3rem 3.5rem 2.75rem;
-      max-width: 520px;
-      width: 100%;
-      box-shadow: 0 4px 32px rgba(15,35,64,.07);
-    }
-
-    .icon-wrap {
-      width: 64px;
-      height: 64px;
-      background: var(--lamber);
-      border: 1px solid var(--lamber-border);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 1.5rem;
-      font-size: 1.875rem;
-      line-height: 1;
-    }
-
-    .badge {
-      display: inline-block;
-      background: var(--lamber);
-      color: var(--amber);
-      border: 1px solid var(--lamber-border);
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 0.6875rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 0.3rem 0.85rem;
-      border-radius: 99px;
-      margin-bottom: 1.25rem;
-    }
-
-    h1 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 1.75rem;
-      font-weight: 700;
-      color: var(--navy);
-      line-height: 1.25;
-      margin-bottom: 0.875rem;
-    }
-
-    .sub {
-      font-size: 1rem;
-      color: var(--slate);
-      line-height: 1.65;
-    }
-
-    .divider {
-      border: none;
-      border-top: 1px solid var(--border);
-      margin: 2rem 0;
-    }
-
-    .status-row {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      font-size: 0.9rem;
-      color: var(--slate);
-      margin-bottom: 1.5rem;
-    }
-
-    .status-dot {
-      width: 8px;
-      height: 8px;
-      background: #F59E0B;
-      border-radius: 50%;
-      flex-shrink: 0;
-      animation: pulse 2s ease-in-out infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50%       { opacity: 0.4; }
-    }
-
-    .contact-label {
-      font-size: 0.8125rem;
-      font-weight: 500;
-      color: var(--muted);
-      margin-bottom: 0.75rem;
-    }
-
-    .contact-link {
-      display: inline-block;
-      background: var(--navy);
-      color: #ffffff;
-      text-decoration: none;
-      font-family: 'Space Grotesk', sans-serif;
-      font-weight: 600;
-      font-size: 0.9375rem;
-      padding: 0.65rem 1.75rem;
-      border-radius: 8px;
-      transition: background 0.15s;
-    }
-
-    .contact-link:hover { background: var(--navy2); text-decoration: none; }
-
-    .footer-note {
-      margin-top: 2.5rem;
-      font-size: 0.8125rem;
-      color: var(--muted);
-      line-height: 1.6;
-    }
-  </style>
+  <title>Priori™ — AI-Assisted Patent Prosecution Platform</title>
+  <meta name="description" content="Priori is an on-premises AI platform built for patent law firms. Faster OA responses, prosecution intelligence, quality review, and inventor workflows — all under your firm's control.">
+  <link rel="canonical" href="https://priori.esq/">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <div class="logo-wrap">
-    <img src="priori_logo.svg" alt="Priori™">
+<!-- ── NAV ────────────────────────────────────────────────── -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">
+    <img src="priori_logo.svg" alt="Priori">
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="features.html">Features</a></li>
+    <li><a href="licensing.html">Licensing</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="contact.html" class="nav-cta">Request Demo</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ───────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-badge">On-Premises AI · Patent Prosecution · Priori™ v1.7</div>
+  <h1>Your firm's <span>institutional knowledge</span>,<br>working at AI speed.</h1>
+  <p>Priori is an on-premises AI platform built exclusively for patent law firms. Faster, more consistent prosecution — without sending client matter data to a public cloud.</p>
+  <div class="hero-actions">
+    <a href="contact.html" class="btn btn-primary">Request a Demo →</a>
+    <a href="features.html" class="btn btn-outline">See All Features</a>
+    <a href="Priori_UserManual.docx" class="btn btn-outline" download>Download Manual</a>
   </div>
+</section>
 
-  <div class="card">
-    <div class="icon-wrap">🔧</div>
-    <div class="badge">Scheduled Maintenance</div>
-    <h1>We'll be back shortly.</h1>
-    <p class="sub">
-      Priori is temporarily offline for scheduled maintenance.
-      We apologize for the interruption and expect to be back online soon.
-    </p>
+<!-- ── TRUST BAR ───────────────────────────────────────────── -->
+<div class="trust-bar">
+  <span>🔒 <strong>On-Premises</strong> — data never leaves your network</span>
+  <span>⚖️ <strong>Attorney-Reviewed</strong> — nothing files without sign-off</span>
+  <span>🏛️ <strong>USPTO-Connected</strong> — live IFW, ODP, and examiner data</span>
+  <span>📋 <strong>Patent Pending</strong> — key features subject to patent protection</span>
+</div>
 
-    <hr class="divider">
+<!-- ── AUDIENCE VALUE PROPS ────────────────────────────────── -->
+<section class="section" style="background: var(--light);">
+  <div class="container">
+    <div class="section-label">Built For Your Team</div>
+    <div class="section-title">One platform. Three perspectives.</div>
+    <div class="audience-grid">
 
-    <div class="status-row">
-      <span class="status-dot"></span>
-      Maintenance in progress
+      <div class="audience-card navy">
+        <div class="aud-label">Managing Partners</div>
+        <h3>Protect competitive edge. Capture institutional knowledge.</h3>
+        <p>Prosecution strategies, examiner intelligence, and successful arguments are systematically captured and applied — so institutional knowledge stays with the firm, not just with individual attorneys.</p>
+        <ul>
+          <li>Reduce per-matter drafting time by hours</li>
+          <li>Standardize quality across all practitioners</li>
+          <li>On-premises deployment — GDPR/ABA-compliant</li>
+          <li>Transparent cost tracking per matter</li>
+        </ul>
+      </div>
+
+      <div class="audience-card light">
+        <div class="aud-label">Patent Practitioners</div>
+        <h3>Write better responses, faster. Without giving up control.</h3>
+        <p>Priori drafts, you decide. The system uses your firm's own prosecution history as few-shot examples, applies examiner-specific intelligence, and flags scope issues before you review.</p>
+        <ul>
+          <li>OA responses with examiner analytics pre-loaded</li>
+          <li>Claim Scope Tuner for §101/§102/§103/§112 optimization</li>
+          <li>Outside Counsel Quality Review — catch issues before filing</li>
+          <li>Inventor Review workflow for plain-language sign-off</li>
+        </ul>
+      </div>
+
+      <div class="audience-card green">
+        <div class="aud-label">In-House & Outside Counsel</div>
+        <h3>More consistent work product. Faster turnaround.</h3>
+        <p>When you send matters to outside firms using Priori, you get a different result — responses informed by your prosecution history, screened for quality issues, and reviewed with your inventors before submission.</p>
+        <ul>
+          <li>Quality Review screens every response before it reaches you</li>
+          <li>Inventor Review creates a documented sign-off record</li>
+          <li>Consistent format and analysis across all matters</li>
+          <li>Prosecution Intelligence tracks your examiners over time</li>
+        </ul>
+      </div>
+
     </div>
-
   </div>
+</section>
 
-  <p class="footer-note">
-    © 2025, 2026 Priori™ · Patent application pending<br>
-    priori.esq
-  </p>
+<!-- ── FEATURE HIGHLIGHTS ──────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">Core Capabilities</div>
+    <div class="section-title">Everything from IFW pull to signed response.</div>
+    <p class="section-sub">Priori handles the full prosecution workflow — on your server, in your network, under your control.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon">📥</div>
+        <h3>IFW Collector</h3>
+        <p>Pulls the complete USPTO file history (IFW) directly from ODP. No manual downloading. Parses OA rejections automatically.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">✍️</div>
+        <h3>OA Response Generator</h3>
+        <p>Generates a full draft Office Action response informed by examiner analytics, firm argument history, and the Firm Library reference corpus.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🧠</div>
+        <h3>Prosecution Intelligence</h3>
+        <p>Harvests your firm's complete prosecution history and computes examiner-level analytics: allow rates, average OA counts, CPC specialties, and pendency percentiles.</p>
+        <span class="tag tag-amber">Patent Pending</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎯</div>
+        <h3>Claim Scope Tuner</h3>
+        <p>Systematically optimizes claim scope across six axes — §101, §102/103, §112, detectability, design-around resistance, and invalidity exposure.</p>
+        <span class="tag tag-amber">Patent Pending</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔍</div>
+        <h3>Quality Review (OCQR)</h3>
+        <p>Screens claims and specification for patent porn, antecedent basis errors, §112(f) nonce words, reference numeral gaps, and described-not-claimed issues.</p>
+        <span class="tag tag-amber">Patent Pending</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">👩‍💼</div>
+        <h3>Inventor Review</h3>
+        <p>Translates claims into plain language, cross-validates against inventor disclosures, and generates a structured sign-off checklist for inventor review meetings.</p>
+        <span class="tag tag-amber">Patent Pending</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">📚</div>
+        <h3>Corpus Manager</h3>
+        <p>Stores approved OA→Response pairs as few-shot examples. The AI learns your firm's drafting style, argument strategies, and amendment patterns.</p>
+        <span class="tag tag-amber">Patent Pending</span>
+      </div>
+      <div class="card">
+        <div class="card-icon">📋</div>
+        <h3>Patent App Generator</h3>
+        <p>Drafts full patent applications from inventor disclosures, including claims, detailed description, and abstract. Art unit analytics inform drafting strategy.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📑</div>
+        <h3>IDS Generator (SB/08b)</h3>
+        <p>Drop in NPL PDFs and get formatted IDS citation tables ready for filing. Supports US patents, foreign references, and non-patent literature.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SECURITY ────────────────────────────────────────────── -->
+<section class="section-sm" style="background: var(--navy); color: #fff;">
+  <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+    <div>
+      <div class="section-label" style="color: #90CAF9;">Security & Compliance</div>
+      <h2 class="section-title" style="color: #fff;">On-premises means on-premises.</h2>
+      <p style="color: rgba(255,255,255,0.75); margin-bottom: 1.5rem;">Priori runs on a server inside your office network. Client matter data never leaves your perimeter unless you explicitly choose Cloud AI mode for a specific task.</p>
+      <a href="licensing.html" class="btn btn-outline">How Licensing Works →</a>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 1rem;">
+      <div style="background: rgba(255,255,255,0.07); border-radius: 8px; padding: 1.25rem; border: 1px solid rgba(255,255,255,0.12);">
+        <strong style="color: #fff;">🔒 Local-First AI</strong>
+        <p style="color: rgba(255,255,255,0.65); font-size: 0.875rem; margin-top: 0.25rem;">Ollama runs fully offline. Claude API is opt-in, prompt-only, and encrypted — no document content is transmitted.</p>
+      </div>
+      <div style="background: rgba(255,255,255,0.07); border-radius: 8px; padding: 1.25rem; border: 1px solid rgba(255,255,255,0.12);">
+        <strong style="color: #fff;">👤 Session Isolation</strong>
+        <p style="color: rgba(255,255,255,0.65); font-size: 0.875rem; margin-top: 0.25rem;">Each session starts fresh. No cross-matter contamination. User logins are personal and session-isolated.</p>
+      </div>
+      <div style="background: rgba(255,255,255,0.07); border-radius: 8px; padding: 1.25rem; border: 1px solid rgba(255,255,255,0.12);">
+        <strong style="color: #fff;">📊 Audit-Ready</strong>
+        <p style="color: rgba(255,255,255,0.65); font-size: 0.875rem; margin-top: 0.25rem;">Usage logs for billing and compliance. Admins see which tools were used — not document content.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ─────────────────────────────────────────────────── -->
+<section class="cta-banner">
+  <h2>Ready to see Priori in your firm?</h2>
+  <p>We offer a live demonstration using your firm's own matters — no generic demo data.</p>
+  <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+    <a href="contact.html" class="btn btn-primary">Request a Demo</a>
+    <a href="Priori_UserManual.docx" class="btn btn-outline" download>Download the User Manual</a>
+  </div>
+</section>
+
+<!-- ── FOOTER ──────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-inner">
+    <div>Priori™ is a patent prosecution platform licensed to law firms. Patent application pending.</div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="licensing.html">Licensing</a>
+      <a href="contact.html">Contact</a>
+      <a href="Priori_UserManual.docx" download>User Manual</a>
+    </div>
+    <div>© 2025, 2026 Priori™ · All Rights Reserved</div>
+  </div>
+</footer>
 
 </body>
 </html>
