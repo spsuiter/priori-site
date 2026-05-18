@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <defs>
+    <style>
+      .wm { font-family: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif; }
+      .tl { font-family: 'DM Sans', 'Helvetica Neue', Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Bracket mark -->
+  <!-- Left vertical bar -->
+  <rect x="4" y="8" width="5" height="50" fill="#1B3A5C" rx="2"/>
+  <!-- Top horizontal bar -->
+  <rect x="4" y="8" width="20" height="5" fill="#1B3A5C" rx="2"/>
+  <!-- Bottom horizontal bar -->
+  <rect x="4" y="53" width="20" height="5" fill="#1B3A5C" rx="2"/>
+  <!-- P letterform -->
+  <text x="12" y="51" font-family="'Georgia', 'Times New Roman', serif"
+        font-weight="700" font-size="38" fill="#1B3A5C">P</text>
+  <!-- Blue accent bar (right side of bracket) -->
+  <rect x="44" y="16" width="4" height="34" fill="#2979FF" rx="2"/>
+
+  <!-- Wordmark: Priori -->
+  <text x="60" y="46" class="wm"
+        font-weight="600" font-size="36" fill="#1B3A5C" letter-spacing="1">Priori</text>
+
+  <!-- Tagline -->
+  <text x="60" y="63" class="tl"
+        font-weight="400" font-size="10.5" fill="#7A8AA0" letter-spacing="0.3">Your firm's institutional knowledge, organized.</text>
+</svg>

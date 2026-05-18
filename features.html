@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features — Priori™ Patent Prosecution Platform</title>
+  <meta name="description" content="Full feature list for Priori — the on-premises AI patent prosecution platform. OA responses, prosecution intelligence, claim scope optimization, quality review, and more.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-logo">
+    <img src="priori_logo.svg" alt="Priori">
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="features.html" class="active">Features</a></li>
+    <li><a href="licensing.html">Licensing</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="contact.html" class="nav-cta">Request Demo</a></li>
+  </ul>
+</nav>
+
+<!-- ── PAGE HERO ───────────────────────────────────────────── -->
+<section class="hero" style="padding: 3.5rem 2rem 3rem;">
+  <div class="hero-badge">v1.7 Feature Set — May 2026</div>
+  <h1>Every tool your firm needs.<br><span>Nothing you don't.</span></h1>
+  <p>Priori covers the full prosecution lifecycle — from IFW pull to signed response — with tools for drafting, analysis, quality review, and inventor communication.</p>
+  <div class="hero-actions">
+    <a href="Priori_UserManual.docx" class="btn btn-primary" download>Download User Manual</a>
+    <a href="contact.html" class="btn btn-outline">Schedule a Demo</a>
+  </div>
+</section>
+
+<!-- ── PROSECUTION TOOLS ───────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">Prosecution Tools</div>
+    <div class="section-title">From ODP to filing-ready draft.</div>
+
+    <div class="feature-row">
+      <div class="feature-text">
+        <h3>IFW Collector</h3>
+        <p>Connects directly to USPTO's Open Data Portal and pulls the complete Image File Wrapper for any application number. No manual downloading, no browser sessions, no ZIP extraction.</p>
+        <ul class="feature-list">
+          <li>Live ODP API connection — data refreshed on demand</li>
+          <li>Automatic OA parsing: extracts claim list, rejections, examiner citations</li>
+          <li>Triggers Prosecution Intelligence lookup for the assigned examiner</li>
+          <li>Supports ODP June 2026 authenticated access (USPTO account required)</li>
+        </ul>
+      </div>
+      <div class="feature-panel">
+        <div class="feature-panel-title">📥 IFW Collector — What It Pulls</div>
+        <ul class="feature-list">
+          <li>Complete file wrapper (all documents)</li>
+          <li>Parsed rejection summaries (§101, §102, §103, §112)</li>
+          <li>Examiner name, art unit, and PTAB history</li>
+          <li>All cited prior art references</li>
+          <li>Prosecution timeline and status flags</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature-row reverse">
+      <div class="feature-text">
+        <h3>Office Action Response Generator</h3>
+        <p>Drafts a complete OA response — argument sections, claim amendments, and remarks — using your firm's prosecution history as worked examples. The AI never replaces attorney judgment; it accelerates it.</p>
+        <ul class="feature-list">
+          <li>Examiner Intelligence panel: allow rate, avg OAs, pendency percentiles, top CPC codes</li>
+          <li>Firm Library RAG: retrieves relevant passages from uploaded firm briefs and responses</li>
+          <li>Corpus few-shot examples: your approved OA→Response pairs as drafting models</li>
+          <li>Supporting references: drag in technical papers or declarations for injection</li>
+          <li>Download ZIP: draft, claim markup, and IDS in one package</li>
+        </ul>
+      </div>
+      <div class="feature-panel">
+        <div class="feature-panel-title">✍️ Generation Pipeline</div>
+        <ol style="list-style: decimal inside; font-size: 0.875rem; color: var(--slate); display: flex; flex-direction: column; gap: 0.4rem;">
+          <li>Parse OA → extract rejections</li>
+          <li>Load examiner analytics from Prosecution Intel DB</li>
+          <li>Retrieve firm corpus examples</li>
+          <li>Query Firm Library (RAG)</li>
+          <li>Inject supporting references</li>
+          <li>Generate full draft response</li>
+          <li>Attorney reviews, edits, signs</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="feature-row">
+      <div class="feature-text">
+        <h3>Corpus Manager <span class="tag tag-amber" style="font-size:0.7rem; vertical-align: middle;">Patent Pending</span></h3>
+        <p>Stores approved OA→Response pairs as few-shot learning examples. The more quality pairs in the corpus, the more closely the AI reflects your firm's drafting style and argument strategies. Pairs can be imported directly from IFW or uploaded manually.</p>
+        <ul class="feature-list">
+          <li>Approval workflow — pairs require attorney sign-off before entering corpus</li>
+          <li>8-stage pipeline status dashboard for licensee onboarding</li>
+          <li>Per-client corpus segmentation for multi-licensee deployments</li>
+          <li>Corpus Maintenance: automated re-seeding and health monitoring</li>
+        </ul>
+      </div>
+      <div class="feature-panel">
+        <div class="feature-panel-title">📚 Corpus Pipeline Stages</div>
+        <ul class="feature-list">
+          <li>Import from IPMS or IFW</li>
+          <li>Deduplicate and normalize</li>
+          <li>Extract OA→Response pairs</li>
+          <li>Attorney approval review</li>
+          <li>Vectorize for retrieval</li>
+          <li>Inject into generation prompts</li>
+          <li>Monitor quality drift</li>
+          <li>Automated re-seed on schedule</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" style="margin: 0;">
+
+<!-- ── ANALYSIS TOOLS ──────────────────────────────────────── -->
+<section class="section" style="background: var(--light);">
+  <div class="container">
+    <div class="section-label">Analysis Tools</div>
+    <div class="section-title">Sharpen claims before they're filed.</div>
+
+    <div class="card-grid" style="margin-bottom: 2.5rem;">
+      <div class="card">
+        <div class="card-icon">🎯</div>
+        <h3>Claim Scope Tuner <span class="tag tag-amber" style="font-size:0.65rem; vertical-align: middle;">Patent Pending</span></h3>
+        <p>Systematically maps claim scope across six axes, helping practitioners find the optimal drafting position that maximizes protection while minimizing prosecution risk.</p>
+        <ul class="feature-list" style="margin-top: 0.75rem;">
+          <li>§101 eligibility risk assessment</li>
+          <li>§102/103 prior art exposure</li>
+          <li>§112 written description support</li>
+          <li>Infringement detectability scoring</li>
+          <li>Design-around resistance analysis</li>
+          <li>Invalidity challenge exposure</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🔍</div>
+        <h3>Outside Counsel Quality Review <span class="tag tag-amber" style="font-size:0.65rem; vertical-align: middle;">Patent Pending</span></h3>
+        <p>Pre-filing screening for the issues that generate rejections, disclaimers, and post-grant challenges. Run before sending any draft to the USPTO or to in-house counsel.</p>
+        <ul class="feature-list" style="margin-top: 0.75rem;">
+          <li>Patent porn detection (20+ terms, with case law)</li>
+          <li>§112(f) nonce word identification</li>
+          <li>Antecedent basis cross-check across claim chain</li>
+          <li>Reference numeral gap analysis</li>
+          <li>AI: described-not-claimed / claimed-not-described</li>
+          <li>Inline annotated DOCX + structured report</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">👩‍💼</div>
+        <h3>Inventor Review <span class="tag tag-amber" style="font-size:0.65rem; vertical-align: middle;">Patent Pending</span></h3>
+        <p>Structured workflow for inventor review meetings. Translates legal claim language into plain English, validates disclosure coverage, and generates a sign-off checklist.</p>
+        <ul class="feature-list" style="margin-top: 0.75rem;">
+          <li>Claim-by-claim plain language translation</li>
+          <li>Disclosure cross-validation (AI-powered)</li>
+          <li>Amendment comparison for OA review meetings</li>
+          <li>Confirmation checklist — exportable DOCX</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">📐</div>
+        <h3>Claim Element Analysis</h3>
+        <p>Maps claim elements against prior art or accused product features. Generates a structured element-by-element breakdown for claim construction and infringement analysis.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🔬</div>
+        <h3>Infringement Analysis</h3>
+        <p>Attorney-only. Applies claim elements to accused product descriptions and generates a detailed infringement analysis including doctrine of equivalents considerations.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">⚖️</div>
+        <h3>Claim Construction</h3>
+        <p>Generates intrinsic and extrinsic evidence summaries for claim terms. Flags prosecution history disclaimer risks and identifies terms requiring Markman treatment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" style="margin: 0;">
+
+<!-- ── PROSECUTION INTELLIGENCE ────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">Prosecution Intelligence <span class="tag tag-amber">Patent Pending</span></div>
+    <div class="section-title">Your firm's prosecution history, organized.</div>
+    <p class="section-sub">The Prosecution Intelligence database aggregates your firm's complete prosecution record and USPTO-wide benchmarks to inform every OA response with data your competitors don't have.</p>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+      <div>
+        <h4 style="color: var(--navy); font-family: 'Space Grotesk', sans-serif; margin-bottom: 0.75rem;">What It Captures</h4>
+        <ul class="feature-list">
+          <li>Complete firm prosecution history (IPMS import)</li>
+          <li>Live USPTO synchronization via ODP API</li>
+          <li>Per-examiner allow rates and argument analytics</li>
+          <li>Average OA counts, pendency P25/P75 percentiles</li>
+          <li>CPC code specialization by examiner</li>
+          <li>RCE/continuation propensity flags</li>
+          <li>USPTO-wide benchmarks (77,000+ examiners)</li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color: var(--navy); font-family: 'Space Grotesk', sans-serif; margin-bottom: 0.75rem;">Where It Appears</h4>
+        <ul class="feature-list">
+          <li>Examiner Intelligence panel in OA Response Generator</li>
+          <li>Strategy Brief: recommended argument approach</li>
+          <li>Patent Application Generator: art unit-specific drafting</li>
+          <li>Portfolio Dashboard: firm-wide prosecution metrics</li>
+          <li>Prosecution Monitor: real-time status and alerts</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider" style="margin: 0;">
+
+<!-- ── DRAFTING & OTHER TOOLS ──────────────────────────────── -->
+<section class="section" style="background: var(--light);">
+  <div class="container">
+    <div class="section-label">Additional Tools</div>
+    <div class="section-title">From first draft to final filing.</div>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon">📝</div>
+        <h3>Patent Application Generator</h3>
+        <p>Drafts full applications from inventor disclosures — claims, detailed description, abstract. Target art unit pulls examiner intelligence into the drafting prompts.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔄</div>
+        <h3>Continuation / CIP / Divisional</h3>
+        <p>Drafts continuation, CIP, and divisional applications from a parent specification. Generates priority claim language automatically.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🖼️</div>
+        <h3>Figure Generator</h3>
+        <p>Generates patent-style technical drawings from natural language descriptions. Exports transparent PNG suitable for USPTO submission.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📋</div>
+        <h3>IDS Generator (SB/08b)</h3>
+        <p>Drop in NPL PDFs — Claude formats compliant IDS citations with ALL-CAPS inventor names per USPTO convention. Editable table before download.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📄</div>
+        <h3>Application Data Sheet</h3>
+        <p>Pre-fills the ADS from docket data. Supports domestic benefit claims, foreign priority, international applications.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📬</div>
+        <h3>Correspondence Drafting</h3>
+        <p>Eight letter types: client status, interview requests, allowance notices, restriction elections, appeal outlines, demand letters, and licensing inquiries.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔎</div>
+        <h3>Prior Art Search & Semantic Search</h3>
+        <p>AI-powered prior art retrieval and semantic patent search across uploaded corpora. Citation Analyzer and Prior Art Mapper for PTAB preparation.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <h3>Portfolio Dashboard</h3>
+        <p>Firm-wide prosecution metrics: pending applications, average prosecution duration, examiner distribution, cost per matter, and renewal deadlines.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🤖</div>
+        <h3>AI Patent Assistant</h3>
+        <p>Conversational patent assistant with full matter context. Supports OA strategy development, claim construction research, and IDS citation review.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── COMPARISON TABLE ────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">Competitive Comparison</div>
+    <div class="section-title">Priori vs. the alternatives.</div>
+    <p class="section-sub">Selected features. Full comparison available on request.</p>
+
+    <div style="overflow-x: auto; border-radius: 8px; border: 1px solid var(--border);">
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 32%;">Feature</th>
+            <th style="background: var(--navy); color: #fff;">Priori ★</th>
+            <th>Otto IP</th>
+            <th>Solve Intel.</th>
+            <th>Juristat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>On-Premises Deployment</strong></td>
+            <td class="check" style="background: #E8F5EC;">✓</td>
+            <td class="dash">—</td>
+            <td class="dash">—</td>
+            <td class="dash">—</td>
+          </tr>
+          <tr>
+            <td><strong>OA Response Drafting</strong></td>
+            <td class="check" style="background: #E8F5EC;">✓</td>
+            <td class="check">✓</td>
+            <td class="check">✓</td>
+            <td class="dash">—</td>
+          </tr>
+          <tr>
+            <td><strong>Firm Prosecution Corpus</strong> <span class="tag tag-amber" style="font-size:0.65rem;">Patent Pending</span></td>
+            <td class="check" style="background: #E8F5EC;">✓</td>
+            <td class="dash">—</td>
+            <td class="dash">—</td>
+            <td class="dash">—</td>
+          </tr>
+          <tr>
+            <td><strong>Prosecution Intelligence DB</strong> <span class="tag tag-amber" style="font-size:0.65rem;">Patent Pending</span></td>
+            <td class="check" style="background: #E8F5EC;">✓</td>
+            <td class="dash">—</td>
+            <td class="dash">—</td>
+            <td style="color: var(--amber);">◑ Playbook</td>
+          </tr>
+          <tr>
+            <td><strong>Claim Scope Tuner</strong> <span class="tag tag-amber" style="font-size:0.65rem;">Patent Pending</span></td>
+            <td class="check" style="background: #E8F5EC;">✓</td>
+            <td class="dash">—</td>
+            <td class="dash">—</td>
+            <td class="dash">—</td>
+          </tr>
+          <tr>
+            <td><strong>Quality Review (OCQR)</strong> <span class="tag tag-amber" style="font-size:0.65rem;">Patent Pending</span></td>
+            <td class="check" style="background: #E8F5EC;">✓</td>
+            <td class="dash">—</td>
+            <td class="dash">—</td>
+            <td class="dash">—</td>
+          </tr>
+          <tr>
+            <td><strong>Inventor Review Workflow</strong> <span class="tag tag-amber" style="font-size:0.65rem;">Patent Pending</span></td>
+            <td class="check" style="background: #E8F5EC;">✓</td>
+            <td class="dash">—</td>
+            <td class="dash">—</td>
+            <td class="dash">—</td>
+          </tr>
+          <tr>
+            <td><strong>IFW Direct Pull (USPTO)</strong></td>
+            <td class="check" style="background: #E8F5EC;">✓</td>
+            <td class="check">✓</td>
+            <td class="dash">—</td>
+            <td class="dash">—</td>
+          </tr>
+          <tr>
+            <td><strong>Patent App Generator</strong></td>
+            <td class="check" style="background: #E8F5EC;">✓</td>
+            <td class="dash">—</td>
+            <td class="dash">—</td>
+            <td class="dash">—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size: 0.8rem; color: var(--muted); margin-top: 0.75rem;">Competitor data verified May 2026. Internal use only — not a legal opinion. Verify independently before external distribution.</p>
+  </div>
+</section>
+
+<!-- ── CTA ─────────────────────────────────────────────────── -->
+<section class="cta-banner">
+  <h2>See the full feature set in action.</h2>
+  <p>We demonstrate Priori using your firm's actual matters — not generic sample data.</p>
+  <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+    <a href="contact.html" class="btn btn-primary">Request a Demo</a>
+    <a href="Priori_UserManual.docx" class="btn btn-outline" download>Download User Manual</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>Priori™ is a patent prosecution platform licensed to law firms. Patent application pending.</div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="licensing.html">Licensing</a>
+      <a href="contact.html">Contact</a>
+      <a href="Priori_UserManual.docx" download>User Manual</a>
+    </div>
+    <div>© 2025, 2026 Priori™ · All Rights Reserved · <a href="mailto:sean@suiter.com">sean@suiter.com</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
