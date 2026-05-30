@@ -9,7 +9,7 @@
   <text font-family="'Space Grotesk','Helvetica Neue',sans-serif" font-weight="700"
         font-size="30" fill="white" x="8" y="40">P</text>
   <!-- Accent bar -->
-  <rect x="36" y="12" width="3.5" height="32" fill="#7EB3FF" rx="2"/>
+  <rect x="36" y="12" width="3.5" height="32" fill="#22D3EE" rx="2"/>
   <!-- Wordmark -->
   <text font-family="'Space Grotesk','Helvetica Neue',sans-serif" font-weight="600"
         font-size="30" fill="white" x="48" y="40" letter-spacing="0.5">Priori</text>
