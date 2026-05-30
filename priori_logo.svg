@@ -1,13 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 64" width="220" height="64">
-  <!-- Bracket: exact geometry from app layout.py -->
+<svg width="40" height="40" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
   <rect x="8" y="8" width="5" height="48" fill="white" rx="1.5"/>
   <rect x="8" y="8" width="22" height="5" fill="white" rx="1.5"/>
   <rect x="8" y="51" width="22" height="5" fill="white" rx="1.5"/>
   <text font-family="'Space Grotesk','Helvetica Neue',sans-serif" font-weight="700"
         font-size="34" fill="white" x="17" y="46">P</text>
-  <!-- Accent bar -->
   <rect x="46" y="14" width="4" height="36" fill="#22D3EE" rx="2"/>
-  <!-- Wordmark -->
-  <text font-family="'Space Grotesk','Helvetica Neue',sans-serif" font-weight="600"
-        font-size="32" fill="white" x="58" y="44">Priori</text>
 </svg>
