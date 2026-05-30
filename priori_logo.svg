@@ -14,8 +14,8 @@
   <!-- Bottom horizontal bar -->
   <rect x="4" y="53" width="20" height="5" fill="#1B3A5C" rx="2"/>
   <!-- P letterform -->
-  <text x="12" y="51" font-family="'Georgia', 'Times New Roman', serif"
-        font-weight="700" font-size="38" fill="#1B3A5C">P</text>
+  <text x="10" y="50" font-family="'Space Grotesk', 'Helvetica Neue', Arial, sans-serif"
+        font-weight="700" font-size="36" fill="#1B3A5C">P</text>
   <!-- Blue accent bar (right side of bracket) -->
   <rect x="44" y="16" width="4" height="34" fill="#2979FF" rx="2"/>
 
